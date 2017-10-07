@@ -1,0 +1,40 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.home-image {
+    height: 100%;
+}
+
+.nav {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0px;
+}
+
+.nav a {
+    color: #262226;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 50px;
+    transition: font-size 0.5s ease;
+}
+
+.nav a:hover {
+    font-size: 22px;
+}
+
+.nav .active {
+    font-size: 22px;
+}
