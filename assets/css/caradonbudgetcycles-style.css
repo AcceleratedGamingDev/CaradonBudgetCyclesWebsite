@@ -1,26 +1,33 @@
 body, html {
     margin: 0px;
     padding: 0px;
-    height: 100%;
     font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: url('assets/images/global_background.jpg');
+    background-size: contain;
+    background-position: center;
 }
 
 .home-image {
     height: 100%;
 }
 
-.nav {
+.navigation {
     width: 160px;
     margin: 0;
     padding: 0;
+    position: fixed;
 }
 
-.nav li {
+.navigation li {
     list-style: none;
     padding: 0px;
 }
 
-.nav a {
+.navigation a {
     color: #262226;
     text-decoration: none;
     font-size: 18px;
@@ -28,13 +35,87 @@ body, html {
     padding-bottom: 6px;
     padding-top: 6px;
     padding-right: 50px;
-    transition: font-size 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.nav a:hover {
+.navigation a:hover {
     font-size: 24px;
 }
 
-.nav .active {
+.navigation .active {
     font-size: 21px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery-img {
+    border: 4px solid #191719;
+    border-radius: 5px;
+    height: 550px;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: inherit; 
+    height: inherit; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+.mySlides {
+    height: 540px;
+}
+
+.slideshow-div {
+    height: 560px;
+    align-items: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
