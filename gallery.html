@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caradon Budget Cycles - Gallery</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/w3.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/caradonbudgetcycles-style.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body style="background-image: url(assets/images/global_background.jpg); background-position: center; background-size: cover">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li><hr />
+                <li><a href="about.html">About</a></li><hr />
+                <li><a href="https://www.facebook.com/caradonbudgetcycles/" target="_blank">Facebook</a></li><hr />
+                <li><a href="gallery.html" class="active">Gallery</a></li><hr />
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div align="center"><br /><br />
+                <img class="mySlides" src="assets/images/gallery/1.jpg">
+                <img class="mySlides" src="assets/images/gallery/2.jpg">
+                <img class="mySlides" src="assets/images/gallery/3.jpg">
+                <img class="mySlides" src="assets/images/gallery/4.jpg">
+                <img class="mySlides" src="assets/images/gallery/5.jpg">
+                <img class="mySlides" src="assets/images/gallery/6.jpg">
+                <img class="mySlides" src="assets/images/gallery/7.jpg">
+                <img class="mySlides" src="assets/images/gallery/8.jpg">
+                <button style="position: relative;" class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button style="position: relative; margin: 25px;" class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </main>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                x[slideIndex-1].style.display = "block"; 
+            }
+        </script>
+    </body>
+</html>
