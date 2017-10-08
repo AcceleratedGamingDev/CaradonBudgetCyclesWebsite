@@ -24,6 +24,7 @@
         </nav>
         <main>
             <div align="center"><br /><br />
+                <img class="mySlides" src="assets/images/gallery/gallery_main.jpg">
                 <img class="mySlides" src="assets/images/gallery/1.jpg">
                 <img class="mySlides" src="assets/images/gallery/2.jpg">
                 <img class="mySlides" src="assets/images/gallery/3.jpg">
@@ -52,18 +53,6 @@
                     x[i].style.display = "none"; 
                 }
                 x[slideIndex-1].style.display = "block"; 
-            }
-            
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none"; 
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1} 
-                x[slideIndex-1].style.display = "block"; 
-                setTimeout(carousel, 4000); // Change image every 2 seconds
             }
         </script>
     </body>
