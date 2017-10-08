@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caradon Budget Cycles - Home</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/caradonbudgetcycles-style-mobile.css">
+    </head>
+    <body style="background-image: url(../assets/images/mobile-home.jpg); background-size: cover; background-position: center;">
+        <nav class="navigation" align="center">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="width: 100%;">Home</button>
+                <hr />
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="../mobile/about">About</a><hr />
+                    <a href="https://www.facebook.com/caradonbudgetcycles/" target="_blank">Facebook</a><hr />
+                    <a href="#">Link 3</a><hr />
+                </div>
+            </div>
+        </nav>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+    </body>
+</html>
