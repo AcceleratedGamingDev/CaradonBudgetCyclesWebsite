@@ -4,6 +4,9 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 ErrorDocument 404 /404
 
+# Set a cookie, and skip the next rule
+RewriteRule ^ - [CO=mredir:0:caradonbudgetcycles.co.uk]
+
 RewriteCond %{HTTP:x-wap-profile} !^$ [OR]
 RewriteCond %{HTTP:Profile}       !^$ [OR]
 RewriteCond %{HTTP_USER_AGENT} "acs|alav|alca|amoi|audi|aste|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-" [NC,OR]
