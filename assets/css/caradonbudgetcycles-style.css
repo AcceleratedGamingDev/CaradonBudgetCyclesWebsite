@@ -116,3 +116,6 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+
+.mySlides {
+    border: 2px solid #FFFFFF;
